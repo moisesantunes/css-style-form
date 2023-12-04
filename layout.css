@@ -1,0 +1,123 @@
+*{
+  box-sizing: border-box;
+}
+form {
+  position: relative;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.25em;
+}
+
+form fieldset {
+  border: 2px solid #4c4c4c;
+}
+
+form legend {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #4c4c4c;
+  position: relative;
+  border: 2px solid #4c4c4c;
+}
+
+form div {
+  width: 50%;
+  margin: auto;
+  
+}
+form div:nth-child(2), form div:nth-child(3),form div:nth-child(4),form div:nth-child(5){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top:.2em;
+}
+form div:nth-child(2) input, form div:nth-child(3) input,form div:nth-child(4) input,form div:nth-child(5) select{
+  margin: auto;
+  width: 95%;
+  height: 2em;
+  border: 2px solid #4c4c4c;
+  border-radius: 5px;
+}
+form div:nth-child(6){
+  display: flex;
+  margin-top:.2em;
+  flex-direction: column;
+  justify-content: center;
+}
+form div:nth-child(6) p{
+  padding: .2em;
+  font-size: .9em;
+  text-align: center;
+  width: 100%;
+  
+  
+}
+form div:nth-child(6) div{
+  font-size: .75em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  margin-top: .5em;
+  width:100%;
+  padding: .2em;
+  
+}
+  form div:nth-child(6) div input{
+    font-size: .55em;
+  }
+form div:nth-child(6) div label{
+ 
+  text-align: left;
+}
+
+form div:nth-child(7){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top:.3em;
+  
+}
+form div:nth-child(7) textarea{
+  margin: auto;
+  width: 95%;
+  height: 4em;
+  border: 2px solid #4c4c4c;
+  border-radius: 5px;
+}
+form div:nth-child(8){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top:.3em;
+  margin-bottom: .5em;
+ 
+}
+
+form div:nth-child(8) input{
+    font-size: .75em;
+    width: 95%;
+    border: 2px solid #4c4c4c;
+    border-radius: 5px;
+}
+form div:nth-child(9){
+  font-size: .8em;
+  margin-top: .5em;
+ 
+}
+form div:nth-child(10) button{
+  font-size: .8em;
+  margin-top: .5em;
+  width: 95%;
+  
+}
+
+@media screen and (max-width: 480px) {
+  body {
+  }
+form div{
+    width:80% ;
+}
+}
